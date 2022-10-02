@@ -1,0 +1,43 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #EBEBEB;
+  color: #313131;
+  font-size: 20px;
+}
+
+#__next {
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+}
+
+main {
+  padding: 20px;
+}
+
+header,
+footer {
+  min-height: 80px;
+}
+
+header {
+  background: #BFBFBF;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+footer {
+  background: #BFBFBF;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
