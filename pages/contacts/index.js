@@ -1,6 +1,12 @@
+import Head from "next/head";
+import Heading from "../../components/Heading";
+
 const Contacts = () => (
   <>
-    <h1>Contacts list:</h1>
+    <Head>
+      <title>Contacts</title>
+    </Head>
+    <Heading text="Contacts list:" />
   </>
 );
 

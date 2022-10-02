@@ -1,9 +1,13 @@
+import Head from "next/head";
 import Heading from "../components/Heading";
 import styles from "../styles/Home.module.scss";
 
 const Home = () => (
   <div className={styles.wrapper}>
-    <Heading text="Demo Next.js" />
+    <Head>
+      <title>Home</title>
+    </Head>
+    <Heading text="DEMO Next.js Application" />
   </div>
 );
 

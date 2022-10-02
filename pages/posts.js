@@ -1,7 +1,12 @@
+import Head from "next/head";
+import Heading from "../components/Heading";
+
 const Posts = () => (
   <>
-    <h1>Posts list:</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+    <Head>
+      <title>Posts</title>
+    </Head>
+    <Heading text="Posts list:" />
   </>
 );
 
