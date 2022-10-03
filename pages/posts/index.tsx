@@ -1,11 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
+import { FC } from "react";
 import Heading from "../../components/Heading";
+import { postType } from "../../types";
+
+type postTypeProps = {
+  posts: [postType],
+}
 
 export const getStaticProps = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await response.json();
-  console.log(data);
   if (!data) {
     return {
       notFound: true,
@@ -13,11 +18,11 @@ export const getStaticProps = async () => {
   }
 
   return {
-    props: { posts: data },
+    props: { posts: data.slice(0, 20) },
   };
 };
 
-const Posts = ({ posts }) => {
+const Posts:FC<postTypeProps> = ({ posts }) => {
   return (
     <>
       <Head>
