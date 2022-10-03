@@ -14,9 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
-        <Image src="/logo.png" width={60} height={60} alt="webDev" />
-      </div>
+      <Image src="/logo.svg" width={120} height={60} alt="logo" />
       <div className={styles.links}>
         {navigation.map(({ id, title, path }) => (
           <Link key={id} href={path}>
